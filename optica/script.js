@@ -1,8 +1,6 @@
 db.collection("proveidor").insert(
     {
-        _id: {
-            $oid: "63d98b2c0a9c511d2406bd2a",
-        },
+        _id: ObjectId("63d98b2c0a9c511d2406bd2a"),
         nom: "Juan Carlos Sanchez",
         carrer: "Doctor Rizal",
         numero: 15,
@@ -14,9 +12,7 @@ db.collection("proveidor").insert(
         nif: 47787041,
     },
     {
-        _id: {
-            $oid: "63d990430a9c511d2406bd2b",
-        },
+        _id: ObjectId("63d990430a9c511d2406bd2b"),
         nom: "Pere Sanchez Ribes",
         carrer: "Madrazo",
         numero: 19,
@@ -30,9 +26,7 @@ db.collection("proveidor").insert(
 );
 
 db.collection("clients").insert({
-    _id: {
-        $oid: "63da28bb0a9c511d2406bd32",
-    },
+    _id: ObjectId("63da28bb0a9c511d2406bd32"),
     nom: "Marta Rigol",
     adreca_postal: "Verge de la Mercè",
     telefon: 655778899,
@@ -42,9 +36,7 @@ db.collection("clients").insert({
 });
 
 db.collection("ulleres").insert({
-    _id: {
-        $oid: "63da27f40a9c511d2406bd2f",
-    },
+    _id: ObjectId("63da27f40a9c511d2406bd2f"),
     marca: "Tag Heuer",
     graduacio_r: 0.8,
     graduacio_l: 0.9,

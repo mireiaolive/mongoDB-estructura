@@ -1,29 +1,21 @@
-db.collection("proveidor").insert(
-    {
-        _id: ObjectId("63d98b2c0a9c511d2406bd2a"),
-        nom: "Juan Carlos Sanchez",
-        carrer: "Doctor Rizal",
-        numero: 15,
-        pis: 4,
-        codi_postal: "08006",
-        pais: "España",
-        telefon: 644547866,
-        fax: 655447788,
-        nif: 47787041,
-    },
-    {
-        _id: ObjectId("63d990430a9c511d2406bd2b"),
-        nom: "Pere Sanchez Ribes",
-        carrer: "Madrazo",
-        numero: 19,
-        pis: 4,
-        codi_postal: "08906",
-        pais: "Espanya",
-        telefon: 775447866,
-        fax: 666778899,
-        nif: 4456743,
-    }
-);
+db.collection("proveidor").insert({
+    _id: ObjectId("63dcdecb0a9c511d2406bd65"),
+    nom: "Juan Carlos Sanchez",
+    carrer: "Doctor Rizal",
+    numero: 15,
+    pis: 4,
+    codi_postal: "08006",
+    pais: "España",
+    telefon: 644547866,
+    fax: 655447788,
+    nif: 47787041,
+    marca: [
+        {
+            _id: ObjectId("63d990430a9c511d2406bd2z"),
+            nom: "converse",
+        },
+    ],
+});
 
 db.collection("clients").insert({
     _id: ObjectId("63da28bb0a9c511d2406bd32"),

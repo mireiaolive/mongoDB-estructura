@@ -1,3 +1,5 @@
+//use pizzeria
+
 db.client.insertOne({
     nom: "Jaume",
     cognom: "Sanchez",

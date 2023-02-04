@@ -1,3 +1,5 @@
+//use optica
+
 db.proveidor.insertOne({
     _id: ObjectId("63dea99f6394164f0394ddc8"),
     nom: "Missandtrendy Sunglasses",

@@ -34,5 +34,5 @@ db.ulleres.insertOne({
     color_vidre_r: "transparent",
     color_vidre_l: "transparent",
     preu: 200,
-    empleat: { nom: "Mario Olivé" },
+    empleat: { nom: "Mario Delgado" },
 });

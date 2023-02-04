@@ -1,40 +1,38 @@
-db.collection("proveidor").insert({
-    _id: ObjectId("63dcdecb0a9c511d2406bd65"),
-    nom: "Juan Carlos Sanchez",
-    carrer: "Doctor Rizal",
-    numero: 15,
-    pis: 4,
+db.proveidor.insertOne({
+    _id: ObjectId("63dea99f6394164f0394ddc8"),
+    nom: "Missandtrendy Sunglasses",
+    carrer: "Carrer de Laforja",
+    numero: 63,
+    pis: 1,
+    porta: 1,
+    ciutat: "Barcelona",
     codi_postal: "08006",
-    pais: "España",
+    pais: "Espanya",
     telefon: 644547866,
     fax: 655447788,
     nif: 47787041,
-    marca: [
-        {
-            _id: ObjectId("63d990430a9c511d2406bd2z"),
-            nom: "converse",
-        },
-    ],
+    marca: { nom: "Converse" },
 });
 
-db.collection("clients").insert({
-    _id: ObjectId("63da28bb0a9c511d2406bd32"),
+db.clients.insertOne({
+    _id: ObjectId("63dea99f6394164f0394ddc9"),
     nom: "Marta Rigol",
     adreca_postal: "Verge de la Mercè",
     telefon: 655778899,
-    email: "miris@gmail.com",
-    data_registre: "2017-08-22T06:11:00.000Z",
-    recomanacio: "Montse Martí",
+    email: "martrig44@gmail.com",
+    created_at: new Date("12/12/2022"),
+    recomanacio: "Cesar Gomez",
 });
 
-db.collection("ulleres").insert({
-    _id: ObjectId("63da27f40a9c511d2406bd2f"),
-    marca: "Tag Heuer",
+db.ulleres.insertOne({
+    _id: ObjectId("63dea99f6394164f0394ddca"),
+    marca: { nom: "Converse" },
     graduacio_r: 0.8,
     graduacio_l: 0.9,
     muntura: ["flotant", "pasta", "metalica"],
     color_muntura: "vermell",
     color_vidre_r: "transparent",
-    color_vidre_i: "transparent",
+    color_vidre_l: "transparent",
     preu: 200,
+    empleat: { nom: "Mario Olivé" },
 });

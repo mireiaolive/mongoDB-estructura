@@ -23,19 +23,6 @@ db.video.insertOne({
     n_dislikes: 200,
     estat: ["public", "ocult", "privat"],
     publicacio: new Date(12 / 03 / 2023),
-    etiqueta: { nom: "pop" },
-    like: [
-        {
-            value: 1,
-            publicacio: new Date(12 / 03 / 2023),
-        },
-    ],
-    dislike: [
-        {
-            value: 1,
-            publicacio: new Date(12 / 03 / 2023),
-        },
-    ],
 });
 
 db.canal.insertOne({
@@ -63,4 +50,14 @@ db.playlist.insertOne({
     nom: "pop",
     created_at: new Date(02 / 08 / 2000),
     estat: ["public", "privat"],
+});
+
+db.etiqueta.insertOne({
+    _id: ObjectId("63e0240f8d06ad1ceeda1fd1"),
+    nom: "pop",
+});
+
+db.like_dislike.insertOne({
+    value: 1,
+    created_at: new Date(02 / 08 / 2000),
 });

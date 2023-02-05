@@ -38,3 +38,8 @@ db.ulleres.insertOne({
     preu: 200,
     empleat: { nom: "Mario Delgado" },
 });
+
+db.empleat.insertOne({
+    _id: ObjectId("63e011988d06ad1ceeda1fd0"),
+    nom: "Mario",
+});

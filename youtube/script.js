@@ -1,5 +1,3 @@
-//use youtube
-
 db.usuari.insertOne({
     _id: ObjectId("63dff28d8d06ad1ceeda1fc5"),
     email: "mbrg@gmail.com",

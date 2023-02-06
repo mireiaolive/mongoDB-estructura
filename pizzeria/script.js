@@ -1,5 +1,3 @@
-//use pizzeria
-
 db.client.insertOne({
     _id: ObjectId("63deb2c48d06ad1ceeda1fbe"),
     nom: "Jaume",

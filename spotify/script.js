@@ -1,10 +1,11 @@
-//use spotify
-
 db.usuari.insertOne({
     _id: ObjectId("63dff2a58d06ad1ceeda1fca"),
     tipo: ["free", "premium"],
     email: "jorge@gmail.com",
-    pagament: ["paypal", "targeta"],
+    password: "abcdefgh",
+    nom_usuari: "jorge_41",
+    data_naixament: new Date(12 / 01 / 1990),
+    sexe: ["hombre", "mujer"],
     pais: "Grecia",
     codigo_postal: "09887",
 });
